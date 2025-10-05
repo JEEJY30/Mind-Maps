@@ -1,0 +1,151 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0.1 Safari/605.1.15" version="28.2.5">
+  <diagram name="Page-1" id="eKPRaPDxQhdPsH_1p-LF">
+    <mxGraphModel dx="1426" dy="953" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="170" width="460" height="570" as="geometry" />
+        </mxCell>
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-2" value="red" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="230" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-3" value="blue" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="230" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-6" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="45" y="500" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-7" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="275" y="500" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-8" value="bridge network&lt;div&gt;v-net-0&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="370" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-9" value="sudo ip link add v-net-0 type bridge" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="20" y="810" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-10" value="sudo ip link add veth-red type peer veth name veth-red-br" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="20" y="870" width="330" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-11" value="sudo ip netns blue" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="20" y="780" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-12" value="sudo ip netns red" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="20" y="750" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-13" value="sudo ip link set v-net-0 up" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="20" y="840" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-14" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="430" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-15" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="430" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-16" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="430" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-17" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="430" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-18" value="192.168.15.1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="30" y="320" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-19" value="192.168.15.2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="360" y="320" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-20" value="192.168.15.5" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="195" y="460" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-21" value="192.168.15.4" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="270" y="590" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-22" value="192.168.15.4" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="40" y="590" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-23" value="eth0" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="425" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-24" value="sudo ip link add veth-blue type peer veth name veth-blue-br" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="20" y="900" width="340" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-25" value="sudo ip link set veth-red netns red" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="20" y="930" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-26" value="sudo ip link set veth-blue netns blue" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="20" y="1020" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="yEUhiBIDRF_ExrOvYtYI-28" target="yEUhiBIDRF_ExrOvYtYI-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-28" value="veth-red" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="155" y="260" width="65" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-29" value="veth-red-br" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="400" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="yEUhiBIDRF_ExrOvYtYI-31" target="yEUhiBIDRF_ExrOvYtYI-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-31" value="veth-blue" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="260" width="65" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-32" value="veth-blue-br" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="400" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-34" value="sudo ip link set veth-red-br master v-net-0" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="20" y="960" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-35" value="sudo ip link set veth-blue-br master v-net-0" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="20" y="1050" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-36" value="sudo ip link set veth-red-br up" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="20" y="990" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-37" value="sudo ip link set veth-blue-br up" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="20" y="1080" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-38" value="sudo ip netns exec red ip addr add 192.168.15.1/24 dev veth-red" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="20" y="1110" width="370" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-39" value="sudo ip netns exec blue ip addr add 192.168.15.2/24 dev veth-blue" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="20" y="1140" width="380" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-40" value="sudo ip netns exec blue ip link set veth-blue up" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="20" y="1170" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-41" value="sudo ip netns exec red ip link set veth-red up" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="20" y="1200" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-42" value="sudo ip addr add 192.168.15.5 dev v-net-0" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="20" y="1230" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-45" value="LAN&lt;div&gt;192.168.0.0/24&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="380" width="130" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.16;entryY=0.55;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="yEUhiBIDRF_ExrOvYtYI-23" target="yEUhiBIDRF_ExrOvYtYI-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-49" value="192.168.0.117" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="920" y="295" width="220" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.447;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="yEUhiBIDRF_ExrOvYtYI-45" target="yEUhiBIDRF_ExrOvYtYI-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-51" value="sudo ip netns exec red ip route add 192.168.0.0/24 via 192.168.15.5" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="920" y="670" width="390" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-52" value="sudo ip netns exec blue ip route add 192.168.0.0/24 via 192.168.15.5" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="920" y="710" width="390" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-53" value="sudo iptables &amp;nbsp;-t nat -A POSTROUTING -s 192.168.15.0/24 -j MASQUERADE" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="470" y="500" width="440" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yEUhiBIDRF_ExrOvYtYI-54" value="sudo ip netns exec blue ip route add 0.0.0.0/0 via 192.168.15.5" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="920" y="770" width="360" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
